@@ -1,0 +1,22 @@
+{
+  "name": "vue-first-app",
+  "version": "1.0.0",
+  "description": "testing vue.js library",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sinoptik93/vue-first-app.git"
+  },
+  "author": "Chepukhin S.V.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sinoptik93/vue-first-app/issues"
+  },
+  "homepage": "https://github.com/Sinoptik93/vue-first-app#readme",
+  "dependencies": {
+    "vue": "^2.6.11"
+  }
+}
