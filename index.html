@@ -7,9 +7,24 @@
   <script type="text/javascript" src="./node_modules/vue/dist/vue.js"></script>
 </head>
 <body>
-  <div id="app">
-    <h1>Hello, {{ message }}!</h1>
-    <div><span>Input yor name: </span><input type="text" v-model="message"></div>
+  <div class="container">
+    <div id="app">
+      <div v-if="gender === 'male' || gender === 'female'">
+       <h1>
+        Hello, 
+        <span v-if="gender === 'male'">mister {{ name }}</span>
+        <span v-if="gender === 'female'">miss {{ name }}</span>
+        .
+       </h1>
+      </div>
+      <h2 v-else>Who are you?</h2>
+      <label for="gender">Gender</label>
+      <input type="text" name="gender" v-model="gender">
+      <br>
+      <label for="gender">Name</label>
+      <input type="text" name="name" v-model="name">
+      <pre>{{ $data }}</pre>
+    </div>
   </div>
 </body>
 <script src="./newComponent.js"></script>
